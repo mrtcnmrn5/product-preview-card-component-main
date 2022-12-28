@@ -1,3 +1,6 @@
+* {
+  overflow: hidden;
+}
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -14,10 +17,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 600px;
+  height: 100vh;
 }
 .container {
-  width: 1000px;
   height: 400px;
   display: flex;
   background-color: white;
@@ -32,15 +34,17 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center;
   margin-left: 20px;
-  /* background-color: white; */
 }
 .container-product .price {
   color: hsl(158, 36%, 37%);
+  font-size: 30px;
+  margin: 10px 0;
 }
 .container-product .price span {
   color: gray;
+  font-size: 20px;
+  text-decoration: line-through;
 }
 .container-product button {
   background-color: hsl(158, 36%, 37%);
@@ -48,13 +52,32 @@ body {
   border: none;
   border-radius: 5px;
   padding: 10px 30px;
+  width: 270px;
+  margin-bottom: 15px;
+}
+.perfume {
+  font-weight: 700;
+  color: hsl(228, 12%, 48%);
+  margin-top: 15px;
+}
+.parfum {
+  width: 300px;
+  font-weight: bold;
+  font-size: 50px;
+  font-family: "https://fonts.google.com/specimen/Fraunces";
+}
+.paragraph {
+  width: 190px;
+  font-size: 14px;
+  font-family: "https://fonts.google.com/specimen/Montserrat";
+  font-weight: 500;
+  color: hsl(228, 12%, 48%);
 }
 @media screen and (max-width: 375px) {
   body {
     width: 375px;
   }
   .container {
-    width: 266.6px;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -67,8 +90,21 @@ body {
   }
   .container .product-img {
     background: url("./images/image-product-mobile.jpg") no-repeat;
-    border-bottom-left-radius: 0px !important;
+    border-bottom-left-radius: 0px;
     border-top-right-radius: 10px;
-    background-size: 100%;
+    height: 300px;
+    width: 100%;
+  }
+  .parfum {
+    width: 250px;
+    font-size: 30px;
+    margin-top: 10px;
+  }
+  .container-product button {
+    width: 235px;
+  }
+  .paragraph {
+    width: 235px;
+    margin-top: 10px;
   }
 }
