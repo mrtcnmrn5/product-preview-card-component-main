@@ -40,11 +40,15 @@ body {
   color: hsl(158, 36%, 37%);
   font-size: 30px;
   margin: 10px 0;
+  position: relative;
 }
 .container-product .price span {
   color: gray;
   font-size: 20px;
   text-decoration: line-through;
+  position: absolute;
+  top: 0;
+  left: 35%;
 }
 .container-product button {
   background-color: hsl(158, 36%, 37%);
@@ -94,6 +98,9 @@ body {
     border-top-right-radius: 10px;
     height: 300px;
     width: 100%;
+  }
+  .container-product .price span {
+    left: 40%;
   }
   .parfum {
     width: 250px;
